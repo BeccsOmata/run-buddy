@@ -33,6 +33,8 @@ header {
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
+    width: 100%;
+    min-height: 100px;
 }
 
 header h1 {
@@ -343,8 +345,34 @@ section {
     flex: 1
 }
 
-.trainer img {
-    width: 100%;
+.trainer-1 {
+  background-image: url("./assets/images/trainer-1.jpg");
+}
+
+.trainer-2 {
+  background-image: url("./assets/images/trainer-2.jpg");
+}
+
+.trainer-3 {
+  background-image: url("./assets/images/trainer-3.jpg");
+}
+
+.trainer-img {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  padding: 15px;
+  align-items: ???;
+}
+
+.trainer-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(252, 225, 56, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .trainer-bio {
